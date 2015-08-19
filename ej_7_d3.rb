@@ -1,7 +1,7 @@
 
 
 while true
-	puts "Ingresa una palabra"
+	puts "Ingresa una palabra\n(Para salir escribe exit)"
 	palabra = gets.chomp
 	break if palabra == "exit"
 
@@ -9,4 +9,3 @@ while true
 		puts "#{palabra} es palindroma"
 	end
 end
-
