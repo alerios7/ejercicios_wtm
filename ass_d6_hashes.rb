@@ -1,15 +1,12 @@
 
 class Hash
   def sed(dist_hash)
-    if self == {} && dist_hash == {}
+
+    if self.empty?
       self[:x] = 0
       self[:y] = 0
-      dist_hash[:x] = 0
-      dist_hash[:y] = 0
-    elsif self == {} && dist_hash != {}
-      self[:x] = 0
-      self[:y] = 0
-    elsif dist_hash == {} && self != {}
+    end
+    if dist_hast.empty?
       dist_hash[:x] = 0
       dist_hash[:y] = 0
     end
