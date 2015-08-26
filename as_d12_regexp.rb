@@ -10,3 +10,5 @@ dates.each_line do |d|
   date[1] = "0#{date[1]}" if date[1].to_i < 10
   f_fixed.write("#{date[2]}-#{date[1]}-#{date[0]}\n")
 end
+f_handle.close
+f_fixed.close
