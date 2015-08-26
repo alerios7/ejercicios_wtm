@@ -1,4 +1,6 @@
+#Archivo con las fechas a corregir
 f_handle = File.open("dates.txt")
+#Archivo con las fechas corregidas "YYYY-MM-DD"
 f_fixed = File.open("fixed_dates.txt", 'w')
 dates = f_handle.read
 
